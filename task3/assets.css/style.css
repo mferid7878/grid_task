@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.center{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.item{
+    background-color: gray;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+.a{
+    grid-area: A;
+}
+.b{
+    grid-area: B;
+}
+.c{
+    grid-area: C;
+}
+.d{
+    grid-area: D;
+}
+.e{
+    grid-area: E;
+}   
+.wrapper{
+    gap: 10px;
+    display: grid;
+    grid-template-areas:'A A B B '
+                        'C D D D '
+                        'E E E E' ;
+grid-template-rows: 100px 100px 100px 100px;
+grid-template-columns: 100px 100px 100px 100px;
+}
