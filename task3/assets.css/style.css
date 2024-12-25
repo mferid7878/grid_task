@@ -26,16 +26,12 @@
 }
 .d{
     grid-area: D;
-}
-.e{
-    grid-area: E;
 }   
 .wrapper{
     gap: 10px;
     display: grid;
-    grid-template-areas:'A A B B '
-                        'C D D D '
-                        'E E E E' ;
+    grid-template-areas:'A A B '
+                        'C D B ';
 grid-template-rows: 100px 100px 100px 100px;
 grid-template-columns: 100px 100px 100px 100px;
 }
